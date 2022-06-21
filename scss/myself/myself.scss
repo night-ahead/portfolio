@@ -1,0 +1,56 @@
+@import "../mixins/mixins.scss";
+
+.myself {
+    &-list {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+        @include _568 {
+            grid-gap: 15px;
+        }
+        &__item:last-child {
+            background: rgb(168, 175, 221);
+            width: fit-content;
+            padding: 20px 30px;
+            border-radius: 15px;
+            margin: 50px auto 0;
+            box-shadow: 0 0 15px 15px #dfe0e9;
+        }
+    }
+    &__green-card {
+        width: fit-content;
+        max-width: 75%;
+        background: #d2f9ce;
+        padding: 15px 25px;
+        border-radius: 30px;
+        box-shadow: 0 0 15px 15px #dfe0e9;
+
+        // this is for dark theme
+        // box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
+        @include _1024 {
+            max-width: 90%;
+        }
+        @include _568 {
+            padding: 20px 30px;
+            max-width: 100%;
+        }
+    }
+    &__text {
+        @include _fz30;
+    }
+    &__img {
+        margin-top: 30px;
+        margin-left: 80px;
+        max-width: 25%;
+        border-radius: 25px;
+        @include _568 {
+            margin-left: 30px;
+            margin-top: 15px;
+        }
+    }
+    &__link {
+        color: red;
+        @include _fz30;
+        font-weight: 700;
+    }
+}

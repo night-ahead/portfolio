@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="./scss/style.css" rel="stylesheet" />
+        <link href="index.js" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+        <header>
+            <div class="header container">
+                <div class="header__gradient">
+                    <svg
+                        class="header__logo"
+                        width="150"
+                        height="150"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            class="header__logo-path"
+                            id="logo"
+                            d="M 40 30 H 60 V 70 H 95 V 45 H 105 V 78 H 110 V 78 H 110 V 120 H 55 V 100 H 50 V 120 H 45 H 40 L 30 30"
+                        />
+                    </svg>
+                </div>
+                <p class="header__text">Just a little site about me...</p>
+            </div>
+        </header>
+
+        <main>
+            <h1 class="visually-hidden">main page of my portfolio</h1>
+            <section class="greeting container">
+                <div class="greeting__blue-card greeting-transition">
+                    <h2 class="visually-hidden">greetings</h2>
+                    <div class="greeting__photo">
+                        <p class="greeting__no-photo">
+                            Тут должно быть мое презентабельное фото, но удачных
+                            не нашлось :/
+                        </p>
+                    </div>
+                    <div class="greeting__wrapper">
+                        <p class="greeting__hello">Привет!</p>
+                        <p class="greeting__name">Меня зовут Андрей Киляков!</p>
+                        <p class="greeting__position">
+                            Я - начинающий front-end разработчик
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills container">
+                <div class="skills__pink-card">
+                    <h2 class="visually-hidden">my skills and posibilities</h2>
+                    <p class="skills__title">Мои навыки</p>
+                    <p class="skills__new">
+                        (не судите строго, плиз, я новичек)
+                    </p>
+                    <ol class="skills-list" style="--marker-color: purple">
+                        <li class="skills-list__item">
+                            <span class="skills__name"
+                                >HTML5, CSS3, SASS(SCSS)</span
+                            >
+                            <span class="skills__description"
+                                >- владею на базовом уровне, в наличии полтора
+                                коммерческих проекта и несколько пет-проектов.
+                                Умею работать с миксинами и переменными в
+                                scss.</span
+                            >
+                        </li>
+                        <li
+                            class="skills-list__item"
+                            style="--marker-color: darkcyan"
+                        >
+                            <span class="skills__name">JavaScript</span>
+                            <span class="skills__description"
+                                >- базовые знания, в багаже опыта у меня один
+                                коммерческий проект, который еще и не до конца
+                                сделан.</span
+                            >
+                        </li>
+                        <li
+                            class="skills-list__item"
+                            style="--marker-color: navy"
+                        >
+                            <span class="skills__name">React</span>
+                            <span class="skills__description"
+                                >- в процессе изучения. Опыта коммерческой
+                                разработки нет, используя некоторые хуки
+                                чувствую себя неуверенно. Поэтому
+                                доучиваю.</span
+                            >
+                        </li>
+                        <li
+                            class="skills-list__item"
+                            style="--marker-color: darkred"
+                        >
+                            <span class="skills__name">Python</span>
+                            <span class="skills__description"
+                                >- в процессе изучения. Я нацелен на позицию
+                                full-stack'а, а значит, питон мне пригодиться
+                                :)</span
+                            >
+                        </li>
+                    </ol>
+                    <p class="skills__more-info">Еще немного общей инфы:</p>
+                    <ul class="skills-second-list">
+                        <li class="skills-second-list__item">
+                            <span class="skills-more-skills"
+                                >Работаю по БЭМ'у</span
+                            >
+                        </li>
+                        <li class="skills-second-list__item">
+                            <span class="skills-more-skills"
+                                >Умею использовать Figma</span
+                            >
+                        </li>
+                        <li class="skills-second-list__item">
+                            <span class="skills-more-skills"
+                                >Использую npm</span
+                            >
+                        </li>
+                        <li class="skills-second-list__item">
+                            <span class="skills-more-skills"
+                                >Английский средне-продвинутый</span
+                            >
+                        </li>
+                        <li class="skills-second-list__item">
+                            <span class="skills-more-skills"
+                                >На этом пока что все</span
+                            >
+                        </li>
+                    </ul>
+                    <p class="skills__text">
+                        В данный момент я прохожу стажировку, на которой делаю
+                        новый сайт для компании.
+                    </p>
+                    <p class="skills__gitlab">Мой гитлаб:</p>
+                    <a
+                        class="skills__link"
+                        href="https://gitlab.com/immortalshit9"
+                        >https://gitlab.com/immortalshit9</a
+                    >
+                </div>
+            </section>
+
+            <section class="examples container">
+                <h2 class="visually-hidden">examples of my work</h2>
+                <div class="examples-wrapper">
+                    <div class="examples-wrapper__grid">
+                        <img
+                            class="examples__img"
+                            src="./assets/images/1.jpg"
+                            alt="img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="examples-wrapper__grid">
+                        <img
+                            class="examples__img"
+                            src="./assets/images/2.jpg"
+                            alt="img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="examples-wrapper__grid">
+                        <img
+                            class="examples__img"
+                            src="./assets/images/3.jpg"
+                            alt="img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="examples-wrapper__grid">
+                        <img
+                            class="examples__img"
+                            src="./assets/images/4.jpg"
+                            alt="img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="examples-wrapper__grid">
+                        <img
+                            class="examples__img"
+                            src="./assets/images/5.jpg"
+                            alt="img"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="examples-wrapper__grid">
+                        <img
+                            class="examples__img"
+                            src="./assets/images/6.jpg"
+                            alt="img"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="myself container">
+                <h2 class="visually-hidden">a little bit about myself</h2>
+                <ul class="myself-list">
+                    <li class="myself-list__item">
+                        <div class="myself__green-card">
+                            <p class="myself__text">
+                                После школы я поступил в медицинский
+                                университет, но быстро понял, что это не мое.
+                            </p>
+                        </div>
+                        <img
+                            class="myself__img"
+                            src="./assets/images/10.jpg"
+                            alt="photo"
+                        />
+                    </li>
+                    <li class="myself-list__item">
+                        <div class="myself__green-card">
+                            <p class="myself__text">
+                                Как - то так я попал на завод...
+                            </p>
+                        </div>
+                        <img
+                            class="myself__img"
+                            src="./assets/images/8.jpeg"
+                            alt="photo"
+                        />
+                    </li>
+                    <li class="myself-list__item">
+                        <div class="myself__green-card">
+                            <p class="myself__text">
+                                Проработав на двух заводах почти пять лет, я
+                                делал и крошечные детали, и огрормные, диаметром
+                                несколько метров. В конце - концов, понял что
+                                это работа не для меня, но есть в ней и кое -
+                                что, что мне нравиться. А нравится мне
+                                создавать. Я вспомнил про школьные годы, когда
+                                активно интересовался программированием и понял,
+                                что это самое настоящее создание, но не
+                                физических объектов, а виртуальных. И вот я
+                                основательно взялся за обучение.
+                            </p>
+                        </div>
+                        <img
+                            class="myself__img"
+                            src="./assets/images/9.jpeg"
+                            alt="photo"
+                        />
+                    </li>
+                    <li class="myself-list__item">
+                        <div class="myself__green-card">
+                            <span class="myself__text"
+                                >Я кспешно прошел обучение на курсах
+                                компании</span
+                            >
+                            <a class="myself__link" href="https://garpix.com/"
+                                >GARPIX</a
+                            >
+                            <span class="myself__text"
+                                >и был зачислен к ним же на стажировку. Но из -
+                                за сложившихся обстоятельств компания больше не
+                                ведет найм новых сотрудников, поэтому я ищу
+                                новую работу.</span
+                            >
+                        </div>
+                    </li>
+                    <li class="myself-list__item">
+                        <span class="myself__text"> I am here now </span>
+                    </li>
+                </ul>
+            </section> -->
+        </main>
+    </body>
+</html>

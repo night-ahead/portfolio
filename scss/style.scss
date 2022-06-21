@@ -1,0 +1,24 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+// mixins
+@import "./mixins/mixins.scss";
+
+// base
+@import "./base/base.scss";
+
+// header
+@import './header/header.scss';
+
+// greeting
+@import './greeting/greeting.scss';
+
+// skills
+@import './skills/skills.scss';
+
+// examples
+@import './examples/examples.scss';
+
+// myself
+@import './myself/myself.scss';

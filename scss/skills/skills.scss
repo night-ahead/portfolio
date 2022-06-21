@@ -1,0 +1,71 @@
+@import "../mixins/mixins.scss";
+
+.skills {
+    &__pink-card {
+        background: rgb(221, 206, 249);
+        padding: 50px 25px 25px 50px;
+        border-radius: 30px;
+        transition: all 0.5s;
+        // &:hover {
+        //     transform: translate(0, -10px);
+        //     // this is for light theme
+        //     box-shadow: 0 0 15px 15px #dfe0e9;
+        //     // this is for dark theme
+        //     // box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
+        // }
+        @include _768 {
+            padding: 40px 20px 30px 30px;
+        }
+    }
+    &__title {
+        @include _fz50;
+    }
+    &__new {
+        margin-top: 10px;
+        @include _fz30;
+        opacity: 0.3;
+    }
+    &-list {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;
+        &__item {
+            @include _fz24;
+        }
+        &__item::marker {
+            font-family: "Indie Flower", cursive !important;
+            @include _fz30;
+            color: var(--marker-color);
+        }
+    }
+    &__more-info {
+        margin-top: 50px;
+        @include _fz30;
+    }
+    &-second-list {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 20px;
+        &__item {
+            @include _fz24;
+            padding: 5px 10px;
+            background: rgb(202, 236, 223);
+        }
+    }
+    &__text {
+        margin-top: 25px;
+        @include _fz24;
+    }
+    &__gitlab {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        @include _fz30;
+    }
+    &__link {
+        @include _fz30;
+        color: red;
+        font-weight: 700;
+    }
+}

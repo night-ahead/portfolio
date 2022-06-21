@@ -1,0 +1,89 @@
+@import "../mixins/mixins.scss";
+
+.greeting {
+    &__blue-card {
+        display: flex;
+        background: rgb(206, 238, 249);
+        padding: 0 25px 25px 50px;
+        border-radius: 30px;
+        transition: all 0.5s;
+        // opacity: 0;
+        transform: translate(500px,0);
+       
+        // &:hover {
+        //     transform: translate(0, -10px);
+        //     // this is for light theme
+        //     box-shadow: 0 0 15px 15px #dfe0e9;
+        //     // this is for dark theme
+        //     // box-shadow: 0 0 15px 15px rgba(255, 255, 255, 0.2);
+        // }
+        @include _768 {
+            flex-direction: column-reverse;
+            padding: 0 20px 30px;
+        }
+    }
+    &__photo {
+        padding: 100px 20px;
+        width: min-content;
+        height: min-content;
+        background: #dfe0e9;
+        display: flex;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+        border: 2px solid rgba(0, 0, 255, 0.2);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        transform: translate(0, 6px);
+        @include _768 {
+            align-self: center;
+            transform: translate(0, 0);
+            padding: 50px 10px;
+            margin-top: 30px;
+        }
+    }
+    &__no-photo {
+        @include _fz30;
+        opacity: 0.5;
+    }
+    &__wrapper {
+        margin-left: 100px;
+        @include _1400 {
+            margin-left: 60px;
+        }
+        @include _1024 {
+            margin-left: 20px;
+        }
+        @include _768 {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+    &__hello {
+        margin-top: 50px;
+        @include _fz50;
+        @include _768 {
+            margin-top: 20px;
+        }
+    }
+    &__name {
+        @include _fz50;
+    }
+    &__position {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .greeting__blue-card {
+        transition: opacity 1s ease, transform 1s ease;
+    }
+}
+
+.greeting-transition {
+    opacity: 1;
+    transform: translate(0, 0);
+}

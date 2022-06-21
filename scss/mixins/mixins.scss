@@ -1,0 +1,130 @@
+@mixin _1600 {
+    @media (max-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin _1400 {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin _1200 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin _1024 {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin _768 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin _568 {
+    @media (max-width: 578px) {
+        @content;
+    }
+}
+
+@mixin _480 {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin _360 {
+    @media (max-width: 360px) {
+        @content;
+    }
+}
+
+// font-size
+
+@mixin _fz50 {
+    font-family: "Lato", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-size: 50px;
+    opacity: 0.8;
+    @include _1600 {
+      font-size: 46px;
+    }
+    @include _1400 {
+      font-size: 42px;
+    }
+    @include _1200 {
+      font-size: 38px;
+    }
+    @include _1024 {
+      font-size: 34px;
+    }
+    @include _768 {
+      font-size: 30px;
+    }
+    @include _568 {
+      font-size: 28px;
+    }
+    @include _480 {
+      font-size: 26px;
+    }
+    @include _360 {
+      font-size: 24px;
+    }
+}
+
+@mixin _fz30 {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    opacity: 0.8;
+    @include _1600 {
+        font-size: 28px;
+    }
+    @include _1400 {
+        font-size: 26px;
+    }
+    @include _1200 {
+        font-size: 24px;
+    }
+    @include _1024 {
+        font-size: 22px;
+    }
+    @include _768 {
+        font-size: 20px;
+    }
+    @include _568 {
+        font-size: 18px;
+    }
+}
+
+@mixin _fz24 {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-weight: 300px;
+    opacity: 0.8;
+    @include _1600 {
+        font-size: 22px;
+    }
+    @include _1400 {
+        font-size: 20px;
+    }
+    @include _1200 {
+        font-size: 18px;
+    }
+    @include _1024 {
+        font-size: 16px;
+    }
+    @include _768 {
+        font-size: 14px;
+    }
+}
+
+

@@ -1,0 +1,52 @@
+@import "../mixins/mixins.scss";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include _480 {
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+    &__logo {
+        max-width: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &-path {
+            fill: lightsalmon;
+        }
+    }
+    &__gradient {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        position: relative;
+        background: linear-gradient(
+            149deg,
+            rgb(108, 157, 148) 0%,
+            rgb(102, 115, 196) 42%,
+            rgb(194, 137, 181) 72%,
+            rgb(238, 236, 107) 100%
+        );
+        animation: gradient 10s infinite linear;
+        background-size: 400%;
+    }
+    &__text {
+        @include _fz30;
+        opacity: 0.25;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}

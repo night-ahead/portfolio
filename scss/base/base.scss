@@ -1,0 +1,36 @@
+@import "../mixins/mixins.scss";
+
+.container {
+    max-width: 1720px;
+    padding: 60px 100px;
+    margin: 0 auto;
+    border-bottom: 2px solid lightgrey;
+    @include _1600 {
+        padding: 40px 70px;
+    }
+    @include _768 {
+        padding: 20px 30px;
+    }
+    @include _480 {
+        padding: 10px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    // dark theme
+    // background: rgb(40, 40, 101);
+}
